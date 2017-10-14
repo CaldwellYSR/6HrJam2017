@@ -11,4 +11,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f7cf91b9ed24c9c8d9da89a9050c5f, type: 3}
   m_Name: ChaserPatrol
   m_EditorClassIdentifier: 
-  waypoints: []

@@ -6,5 +6,15 @@ using UnityEngine;
 public class PatrolAction : Action {
 
 	public override void Act(StateController controller) {
+		Patrol(controller);
+	}
+
+	private void Patrol(StateController controller) {
+		controller.navMeshAgent.destination = controller.waypoints[controller.nextWaypoint].position;
+		controller.navMeshAgent.Resume();
+		if (controller.navMeshAgent.remainingDistance <= controller.navMeshAgent.stoppingDistance) {
+			controller.nextWaypoint = ++controller.nextWaypoint % controller.waypoints.Length;
+
+		}
 	}
 }
