@@ -17,6 +17,7 @@ public class LookDecision : Decision {
 			&& hit.collider.CompareTag("Player")
 		) {
 			controller.chaseTarget = hit.collider.gameObject;
+			controller.supriseSource.PlayOneShot(controller.suprise);
 			return true;
 		} else {
 			return false;

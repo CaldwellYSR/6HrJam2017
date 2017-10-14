@@ -10,16 +10,19 @@ public class StateController : MonoBehaviour {
     public Transform eyes;
     public float lookRadius = 2f;
     public float lookRange = 20.0f;
+    public AudioClip suprise;
 
     [HideInInspector] public int nextWaypoint;
     [HideInInspector] public NavMeshAgent navMeshAgent;
     [HideInInspector] public GameObject chaseTarget;
+    [HideInInspector] public AudioSource supriseSource;
 
     private bool soundsHavePlayed;
 
     void Awake() {
         nextWaypoint = 0;
         navMeshAgent = GetComponent<NavMeshAgent>();
+        supriseSource = GetComponent<AudioSource>();
     }
 
     void Update() {
