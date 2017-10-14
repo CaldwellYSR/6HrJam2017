@@ -8,8 +8,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2c33c8d421af47daac5867b288924d9, type: 3}
-  m_Name: ChaserGhostPatrol
+  m_Script: {fileID: 11500000, guid: 4a7908ab137e24979a1c1176e81d4f99, type: 3}
+  m_Name: LookForTarget
   m_EditorClassIdentifier: 
-  actions:
-  - {fileID: 11400000, guid: 6973ec4dcf2244e519b3894a3eb4433b, type: 2}
