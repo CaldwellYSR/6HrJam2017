@@ -10,6 +10,7 @@ public class ChaseAction : Action {
 	}
 
 	private void ChaseTarget(StateController controller) {
+		controller.navMeshAgent.speed = 8;
 		controller.navMeshAgent.destination = controller.chaseTarget.transform.position;
 		controller.navMeshAgent.Resume();
 	}

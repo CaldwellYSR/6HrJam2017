@@ -15,6 +15,8 @@ public class StateController : MonoBehaviour {
     [HideInInspector] public NavMeshAgent navMeshAgent;
     [HideInInspector] public GameObject chaseTarget;
 
+    private bool soundsHavePlayed;
+
     void Awake() {
         nextWaypoint = 0;
         navMeshAgent = GetComponent<NavMeshAgent>();
