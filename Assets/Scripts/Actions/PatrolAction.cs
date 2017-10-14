@@ -4,7 +4,9 @@ using UnityEngine;
 
 [CreateAssetMenu(menuName = "AI/Actions/PatrolAction")]
 public class PatrolAction : Action {
+
+	public Transform[] waypoints;
+
 	public override void Act(StateController controller) {
-		Debug.Log("I'm Patrolling look at me");
 	}
 }
