@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class StateController : MonoBehaviour {
 
     public State currentState;
-	public Transform[] waypoints;
+    public Transform[] waypoints;
     public Transform eyes;
     public float lookRadius = 2f;
     public float lookRange = 20.0f;
@@ -16,6 +16,7 @@ public class StateController : MonoBehaviour {
     [HideInInspector] public NavMeshAgent navMeshAgent;
     [HideInInspector] public GameObject chaseTarget;
     [HideInInspector] public AudioSource supriseSource;
+    [HideInInspector] public bool beingAttacked, beingConsumed;
 
     private bool soundsHavePlayed;
 

@@ -9,14 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2c33c8d421af47daac5867b288924d9, type: 3}
-  m_Name: ChaserGhostChase
+  m_Name: StunState
   m_EditorClassIdentifier: 
   actions:
-  - {fileID: 11400000, guid: d04b980977574443f84e2d722c5706bd, type: 2}
+  - {fileID: 11400000, guid: 3b8c39b865ebc4fdfbbd240611b64a3e, type: 2}
   transitions:
-  - decision: {fileID: 11400000, guid: 8197ecffe0f6649c1966e3b4fed2bddf, type: 2}
-    trueState: {fileID: 11400000, guid: 6c85dd4bdf87f473fa8b32c1389510c1, type: 2}
+  - decision: {fileID: 11400000, guid: 03b2cd1c91b4e4ab4b7f10cd42d1a0bf, type: 2}
+    trueState: {fileID: 11400000, guid: 30a95a609486248408a976383633b688, type: 2}
     falseState: {fileID: 11400000}
   - decision: {fileID: 11400000, guid: c583c8eb57e3d4988a807a7a6a7c70ad, type: 2}
-    trueState: {fileID: 11400000, guid: bbb33db68ddb9458c87d4167303ad815, type: 2}
-    falseState: {fileID: 11400000}
+    trueState: {fileID: 11400000}
+    falseState: {fileID: 11400000, guid: dc168c59c71264222b381dd66d748b89, type: 2}
